@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://lavame-plus-nova-era.vercel.app/sitemap.xml
