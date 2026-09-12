@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-11T22:03:15Z",
+  "title": "Design System: Lavame Plus",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Azul Hidro-Lavagem",
+        "canonical": "#0b72d9",
+        "tonalRamp": ["#031d38", "#06386d", "#0853a2", "#0b72d9", "#3ca0f3", "#74bcf6", "#b2daf9", "#e4f2fd"]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Azul Profundo",
+        "canonical": "#064f9e",
+        "tonalRamp": ["#02162e", "#032c5b", "#053e81", "#064f9e", "#1b74d4", "#529bf0", "#98c3f7", "#e1edfd"]
+      },
+      "secondary": {
+        "role": "secondary",
+        "displayName": "Verde Vitalidade",
+        "canonical": "#38a91d",
+        "tonalRamp": ["#0d2b07", "#174e0d", "#257814", "#38a91d", "#5ac63f", "#85d870", "#b7eca9", "#e7f9e2"]
+      },
+      "whatsapp": {
+        "role": "secondary",
+        "displayName": "Verde WhatsApp",
+        "canonical": "#20bd5c",
+        "tonalRamp": ["#062e15", "#0e592a", "#168a42", "#20bd5c", "#47d47c", "#7ae1a2", "#b2f0cb", "#e4faed"]
+      },
+      "neutral-ink": {
+        "role": "neutral",
+        "displayName": "Carvão Têxtil",
+        "canonical": "#10243a",
+        "tonalRamp": ["#040a10", "#091420", "#0c1c2e", "#10243a", "#1b3c61", "#28588e", "#497fbd", "#bfd7f1"]
+      },
+      "neutral-muted": {
+        "role": "neutral",
+        "displayName": "Ardósia Média",
+        "canonical": "#5f7182",
+        "tonalRamp": ["#15191d", "#2b333a", "#45525e", "#5f7182", "#7f90a1", "#a2b0be", "#c8d2dc", "#edf1f5"]
+      },
+      "neutral-line": {
+        "role": "neutral",
+        "displayName": "Gelo Têxtil",
+        "canonical": "#dce6ef",
+        "tonalRamp": ["#303d47", "#5b6f7e", "#8da2b3", "#b7c8d6", "#dce6ef", "#e7eff5", "#f1f5f9", "#fafbfc"]
+      },
+      "neutral-soft": {
+        "role": "neutral",
+        "displayName": "Fundo Névoa",
+        "canonical": "#f5f9fc",
+        "tonalRamp": ["#343e46", "#647482", "#98a9b7", "#c8d5df", "#e3ecf3", "#f0f5f9", "#f5f9fc", "#ffffff"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Branco Puro",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#1e2124", "#43484e", "#717982", "#a5abb2", "#d2d6da", "#edf0f2", "#f7f8f9", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título principal do Hero de alto impacto e clareza imediata."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Títulos de seção (H2) que estruturam a narrativa da landing page."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Títulos de cartões de serviço, etapas e perguntas do FAQ (H3)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Parágrafos descritivos, informações de cobertura e respostas."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Kickers, categorias e selos de confiança em caixa alta."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float-action",
+        "value": "0 14px 32px rgba(0, 0, 0, 0.18)",
+        "purpose": "Elevação utilitária para o botão flutuante de WhatsApp."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Transição suave para interações de hover e foco."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Botão principal de ação institucional e chamada direta.",
+      "html": "<button class=\"ds-btn-primary\">Solicitar orçamento no WhatsApp</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border: none; border-radius: 12px; background: #0b72d9; color: #ffffff; font-family: Inter, system-ui, sans-serif; font-size: 1rem; font-weight: 800; cursor: pointer; text-decoration: none; transition: background 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s ease; } .ds-btn-primary:hover { background: #064f9e; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #0b72d9; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Botão secundário limpo para navegação ou ações de menor peso.",
+      "html": "<button class=\"ds-btn-ghost\">Ver serviços</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border: 1px solid #dce6ef; border-radius: 12px; background: #ffffff; color: #064f9e; font-family: Inter, system-ui, sans-serif; font-size: 1rem; font-weight: 800; cursor: pointer; text-decoration: none; transition: background 0.2s ease, border-color 0.2s ease; } .ds-btn-ghost:hover { background: #f5f9fc; border-color: #064f9e; } .ds-btn-ghost:focus-visible { outline: 2px solid #064f9e; outline-offset: 2px; }"
+    },
+    {
+      "name": "WhatsApp Floating Button",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Botão flutuante de atendimento prioritário no canto da tela.",
+      "html": "<a class=\"ds-btn-floatwa\" href=\"https://wa.me/5521979511720\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>",
+      "css": ".ds-btn-floatwa { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 20px; border-radius: 999px; background: #20bd5c; color: #ffffff; font-family: Inter, system-ui, sans-serif; font-weight: 850; text-decoration: none; box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18); transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-btn-floatwa:hover { transform: scale(1.03); box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22); }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Cartão plano para apresentação individual dos itens higienizados.",
+      "html": "<article class=\"ds-card-service\"><div class=\"ds-card-icon\">🛋️</div><h3 class=\"ds-card-title\">Higienização de sofá</h3><p class=\"ds-card-desc\">Limpeza profissional em domicílio para remoção de sujidades, ácaros, manchas e odores.</p></article>",
+      "css": ".ds-card-service { background: #ffffff; border: 1px solid #dce6ef; border-radius: 16px; padding: 26px; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; gap: 12px; transition: border-color 0.2s ease; } .ds-card-service:hover { border-color: #0b72d9; } .ds-card-icon { font-size: 1.8rem; line-height: 1; } .ds-card-title { margin: 0; font-size: 1.25rem; font-weight: 700; color: #10243a; } .ds-card-desc { margin: 0; font-size: 0.95rem; color: #5f7182; line-height: 1.55; }"
+    },
+    {
+      "name": "Area Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Cápsula compacta para listar bairros atendidos com leitura rápida.",
+      "html": "<span class=\"ds-chip\">Jacarepaguá</span>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; padding: 10px 16px; border: 1px solid #dce6ef; border-radius: 999px; background: #f6f9fb; color: #10243a; font-family: Inter, system-ui, sans-serif; font-size: 0.9rem; font-weight: 700; }"
+    },
+    {
+      "name": "Form Input Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo de formulário para coleta ágil de dados de orçamento.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-input-demo\">Seu bairro</label><input id=\"ds-input-demo\" class=\"ds-input\" placeholder=\"Ex.: Taquara\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 6px; font-family: Inter, system-ui, sans-serif; } .ds-field-label { font-size: 0.85rem; font-weight: 700; color: #10243a; } .ds-input { min-height: 48px; border-radius: 12px; border: 1px solid #dce6ef; background: #ffffff; color: #10243a; padding: 0 14px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s ease; } .ds-input:focus-visible { outline: 2px solid #0b72d9; outline-offset: 1px; border-color: #0b72d9; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O Lar Aconchegante & Despreocupado",
+    "overview": "O sistema visual da Lavame Plus transmite a sensação acolhedora, limpa e segura de um lar onde famílias, crianças e pets convivem com total liberdade e tranquilidade. O design rejeita a frieza hospitalar ou o exagero cosmético de startups de tecnologia; sua força vem da apresentação de uma empresa real, séria e acessível, que cuida com esmero do patrimônio e da saúde de cada residência.\n\nA composição privilegia fundos claros, respiros generosos e tipografia forte com leitura imediata. Os tons de azul e verde são aplicados com sobriedade funcional: o azul assegura estabilidade profissional e água limpa; o verde reforça vitalidade, saúde e a ponte direta de conversão via WhatsApp.\n\nEvitam-se deliberadamente ornamentos desnecessários, neons, efeitos de glow, sombras pesadas e o uso indiscriminado de formatos cilíndricos (pills) em todos os blocos. O foco absoluto reside na transparência do serviço, na clareza das regiões atendidas e na facilidade de solicitar um orçamento instantâneo.",
+    "keyCharacteristics": [
+      "Fundo predominantemente claro com amplas áreas de respiro e ritmo espacial despoluído.",
+      "Tipografia robusta (Inter) com hierarquia nítida entre títulos sólidos e corpo confortável.",
+      "Acentos cromáticos controlados: azul para autoridade institucional e verde para saúde e WhatsApp.",
+      "Superfícies planas e honestas, com bordas arredondadas discretas (12px a 16px) e sem sombras artificiais pesadas.",
+      "Fluxo de conversão direto, descomplicado e livre de atritos."
+    ],
+    "rules": [
+      {
+        "name": "The Restraint Rule",
+        "body": "Azul e verde nunca competem pelo mesmo plano visual no mesmo elemento. O azul conduz a leitura institucional; o verde é reservado para indicadores de cuidado e ações diretas de contato.",
+        "section": "colors"
+      },
+      {
+        "name": "The Clean Contrast Rule",
+        "body": "Qualquer texto ou número com valor informacional deve ter contraste suficiente contra seu fundo, utilizando Carvão Têxtil (#10243a) sobre superfícies claras, garantindo leitura instantânea sem esforço óptico.",
+        "section": "colors"
+      },
+      {
+        "name": "The Headline Weight Rule",
+        "body": "Títulos de primeiro e segundo nível recebem peso marcante (700 a 800) e traçado ligeiramente compacto (-0.03em a -0.04em), transmitindo segurança e assertividade profissional sem parecer agressivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Breathing Room Rule",
+        "body": "Espaços em branco generosos entre blocos têm prioridade sobre divisores decorativos. O conteúdo respira com naturalidade, eliminando qualquer sensação de aglomeração visual.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-By-Default Rule",
+        "body": "Superfícies de conteúdo são planas por definição. Bordas físicas sutis e camadas tonais de fundo estabelecem a separação visual; sombras decorativas sob cartões estáticos são proibidas.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Measured Radius Rule",
+        "body": "Cartões utilizam raio de 16px a 20px; botões de formulário e inputs utilizam 12px a 14px. Esse equilíbrio mantém a cordialidade do toque residencial sem perder a seriedade de uma empresa formal.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do priorizar respiros amplos e fundo claro para que o conteúdo respire com naturalidade.",
+      "Do manter a tipografia em Inter com alto contraste (Carvão Têxtil #10243a em fundos claros).",
+      "Do utilizar cantos arredondados moderados (12px a 16px) em cartões e botões, reservando pills estritamente para elementos flutuantes ou tags.",
+      "Do destacar os pontos de contato do WhatsApp com a cor canônica #20bd5c e clareza de chamada.",
+      "Do explicar com precisão o fluxo de atendimento em 4 passos (foto -> orçamento -> agendamento -> execução)."
+    ],
+    "donts": [
+      "Don't saturar a tela com sombras pesadas, brilhos neons ou efeitos glow decorativos.",
+      "Don't utilizar pills circulares em todos os botões e caixas, o que diminui a percepção de seriedade da empresa.",
+      "Don't aplicar gradientes multicoloridos agressivos que compitam com o texto ou gerem cansaço visual.",
+      "Don't fabricar depoimentos com fotos de pessoas falsas ou inventar estatísticas não comprovadas.",
+      "Don't esconder os bairros cobertos ou omitir que o serviço é realizado com agendamento em domicílio."
+    ]
+  }
+}
